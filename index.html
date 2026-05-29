@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1 id="title">Rock Paper Scissors</h1>
+        </header>
+
+        <main>
+            <div class="choices">
+                <div class="choice" id="rock" title="Rock">
+                    <div class="img-wrapper">
+                        <img src="rock.jpg" alt="Rock">
+                    </div>
+                </div>
+
+                <div class="choice" id="paper" title="Paper">
+                    <div class="img-wrapper">
+                        <img src="paper.jpg" alt="Paper">
+                    </div>
+                </div>
+
+                <div class="choice" id="scissor" title="Scissor">
+                    <div class="img-wrapper">
+                        <img src="scissor.jpg" alt="Scissor">
+                    </div>
+                </div>
+            </div>
+
+            <div class="score-board">
+                <div class="score-card">
+                    <p class="score-label">You</p>
+                    <p id="user-score" class="score-value">0</p>
+                </div>
+                <div class="score-divider">:</div>
+                <div class="score-card">
+                    <p class="score-label">Computer</p>
+                    <p id="comp-score" class="score-value">0</p>
+                </div>
+            </div>
+
+            <div class="msg-container">
+                <p id="msg">Make Your Move!</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
